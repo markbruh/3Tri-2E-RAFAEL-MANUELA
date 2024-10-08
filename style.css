@@ -50,11 +50,13 @@ footer p{
     border-radius: 0.6rem;
     font-size: 1vw;
     margin: 0.6rem;
-    border-radius: 1px;
+    border-style: solid;
+
     }
 
     body{
-        background-image: image(bg-desktop);
+       background-image: url(bg-desktop.webp);
+
 
 
     }
