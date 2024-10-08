@@ -36,3 +36,25 @@ footer p{
     background-color: rgb(143, 228, 185);
     height: 20rem;
 }
+    
+.cartao-conteudo{
+    
+    text-align: center;
+    height: 100%;
+}
+    h3{
+    background-color: rgb(238, 190, 135);
+    padding: 0.5rem;
+    text-align: left;
+    position: absolute;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+    margin: 0.6rem;
+    border-radius: 1px;
+    }
+
+    body{
+        background-image: image(bg-desktop);
+
+
+    }
