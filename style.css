@@ -10,12 +10,12 @@
 }
 body{
     font-family: 'Bai Jamjuree';
-    background-color: rgb(216, 242, 243);
+    background-image: url(bg-desktop.webp);
 }
 
 footer{
     background-color: black;
-    color: var(--text-color);
+    color: white;
     position: fixed;
     width: 100%;
     height: 2rem;
@@ -33,7 +33,7 @@ footer p{
 
 .cartao{
     margin: 1rem;
-    background-color: rgb(143, 228, 185);
+    background-color: var(--cor-cartao-frente);
     height: 20rem;
 }
     
@@ -41,8 +41,11 @@ footer p{
     
     text-align: center;
     height: 100%;
+    background-color: var(--cor-cartao-frente);
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
 }
-    h3{
+    .cartao-conteudo h3{
     background-color: rgb(238, 190, 135);
     padding: 0.5rem;
     text-align: left;
@@ -50,13 +53,24 @@ footer p{
     border-radius: 0.6rem;
     font-size: 1vw;
     margin: 0.6rem;
-    border-style: solid;
+    border: solid 1px var(--text-color);
 
     }
 
-    body{
-       background-image: url(bg-desktop.webp);
+    p{
+       color:wheat ;
+    }
+.cartao-conteudo-pergunta p{
+    font-weight: 500;
+}
+.cartao-conteudo-resposta p{
+    color: var(--cor-cartao-verso);
+    font-weight: 700;
+}
+    .cartao-conteudo-pergunta, .cartao-conteudo-resposta{
+        margin: 1rem;
 
-
-
+    }
+    .cartao:hover .cartao-conteudo{
+        transform: rotateY(180deg);
     }
